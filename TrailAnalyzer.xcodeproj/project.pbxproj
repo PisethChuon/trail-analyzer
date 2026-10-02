@@ -31,16 +31,8 @@
 			isa = PBXGroup;
 			children = (
 				7BC4685C306FAFAF001D2F3C /* TrailAnalyzer */,
-				7BC4685B306FAFAF001D2F3C /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		7BC4685B306FAFAF001D2F3C /* Products */ = {
-			isa = PBXGroup;
-			children = (
 				7BC4685A306FAFAF001D2F3C /* TrailAnalyzer.app */,
 			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,7 +81,7 @@
 			mainGroup = 7BC46851306FAFAF001D2F3C;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 7BC4685B306FAFAF001D2F3C /* Products */;
+			productRefGroup = 7BC46851306FAFAF001D2F3C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

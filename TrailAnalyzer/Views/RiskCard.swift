@@ -1,0 +1,18 @@
+//
+//  RiskCard.swift
+//  TrailAnalyzer
+//
+//  Created by chuonpiseth on 2/10/26.
+//
+
+import SwiftUI
+
+struct RiskCard: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+#Preview {
+    RiskCard()
+}
