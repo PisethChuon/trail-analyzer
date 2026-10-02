@@ -1,7 +1,7 @@
 import Foundation
 
 enum Risk: String, Identifiable, CaseIterable {
-    case hightRisk = "Hight Rish"
+    case highRisk = "Hight Rish"
     case difficult = "Difficult"
     case moderate = "Moderate"
     case easy = "Easy"
@@ -22,7 +22,7 @@ enum Risk: String, Identifiable, CaseIterable {
             return "As with any hike, make sure you bring plenty of water, sunscreen, bug spray, and snacks. Plan for some break along the way to keep you energy up, and check your health and finess app to monitor your rate and energy levels. You got this!"
         case .difficult:
             return "This is hike challenging! Make sure you prepare with the right gear and supplies and trun of sharing location with a trushed friend."
-        case .hightRisk:
+        case .highRisk:
             return "This is hike may be push you beyound your limits. Maybe try a more moderate hike and work your way to this."
         }
     }
