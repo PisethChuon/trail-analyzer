@@ -21,7 +21,7 @@ struct TrailInfoView: View {
             TrailField(iconName: "mountain.2.fill", label: "Elevation Change") {
                 TextField("meters", value: $trailInfo.elevation, format: .number)
                     .keyboardType(.numberPad)
-                    .multilineTextAlignment(.leading)
+                    .multilineTextAlignment(.trailing)
             }
             
             TrailField(iconName: "shoe.fill", label: "Terrain") {
