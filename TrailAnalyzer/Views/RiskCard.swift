@@ -6,7 +6,7 @@ struct RiskCard: View {
     @State var risk: Risk
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 Image(risk.image)
                     .resizable()
@@ -24,6 +24,6 @@ struct RiskCard: View {
 }
 
 #Preview {
-    let prediction = TrailAnalyzer().predictRisk()
+    let prediction = TrailAnalyzer().predictRisk(trailInfo: .sample)
     RiskCard(risk: prediction)
 }
