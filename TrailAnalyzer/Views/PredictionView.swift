@@ -8,11 +8,39 @@
 import SwiftUI
 
 struct PredictionView: View {
+    @State var predictionRisk: Risk
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            RiskCard(risk: predictionRisk)
+            Spacer()
+        }
+        .navigationTitle("Results")
+        .navigationBarTitleDisplayMode(.large)
+        .toolbar {
+
+            ToolbarItem(placement: .topBarTrailing) {
+                NavigationLink {
+                    riskSummaryView
+                } label: {
+                    Image(systemName: "info.circle")
+                }
+            }
+        }
+        .trailTheme()
+    }
+    
+    var riskSummaryView: some View {
+        ScrollView {
+            ForEach(Risk.allCases) {
+                RiskCard(risk: $0)
+            }
+        }
     }
 }
 
 #Preview {
-    PredictionView()
+    NavigationStack {
+        PredictionView(predictionRisk: .moderate)
+    }
 }
