@@ -1,7 +1,7 @@
 import Foundation
 
 enum Risk: String, Identifiable, CaseIterable {
-    case highRisk = "Hight Rish"
+    case highRisk = "High Risk"
     case difficult = "Difficult"
     case moderate = "Moderate"
     case easy = "Easy"
